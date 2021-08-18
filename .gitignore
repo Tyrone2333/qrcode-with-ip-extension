@@ -12,6 +12,7 @@
 /.next/
 /out/
 /extensions/dist
+/publish
 
 # production
 /build
