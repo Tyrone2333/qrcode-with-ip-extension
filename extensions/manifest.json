@@ -6,7 +6,6 @@
     "default_popup": "./dist/index.html"
   },
   "permissions": [
-    "bookmarks",
     "tabs",
     "activeTab"
   ],
