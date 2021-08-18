@@ -1,11 +1,14 @@
-import type { NextPage } from 'next'
+import type { NextPage } from "next";
+import QRCode from "react-qr-code";
 
 const Home: NextPage = () => {
-  return (
-      <div>
-        <p>Hello World</p>
-      </div>
-  )
-}
+  const currentUrl = location.href;
 
-export default Home
+  return (
+    <div>
+      <QRCode value={currentUrl} />
+    </div>
+  );
+};
+
+export default Home;
