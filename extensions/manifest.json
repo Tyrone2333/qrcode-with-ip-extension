@@ -5,9 +5,11 @@
   "browser_action": {
     "default_popup": "./dist/index.html"
   },
-  "permissions": [
-    "tabs",
-    "activeTab"
-  ],
+  "permissions": ["tabs", "activeTab"],
+  "icons": {
+    "16": "16.png",
+    "48": "48.png",
+    "128": "128.png"
+  },
   "manifest_version": 2
 }
