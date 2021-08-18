@@ -2,7 +2,7 @@
   "name": "qrcode-with-ip",
   "description": "Display QRCode with Your Local IP",
   "version": "1.0.0",
-  "browser_action": {
+  "action": {
     "default_popup": "./dist/index.html"
   },
   "permissions": ["tabs", "activeTab"],
@@ -11,5 +11,5 @@
     "48": "48.png",
     "128": "128.png"
   },
-  "manifest_version": 2
+  "manifest_version": 3
 }
