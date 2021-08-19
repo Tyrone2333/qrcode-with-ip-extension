@@ -1,5 +1,5 @@
 {
-  "name": "qrcode-with-ip",
+  "name": "QRCode With IP",
   "description": "Display QRCode with Your Local IP",
   "version": "1.0.0",
   "action": {
