@@ -12,7 +12,10 @@ export const useLocalIP = (): string | null => {
   }, []);
 
   useEffect(() => {
-    const defaultValue = localIPs[0];
+    const v4Regex = new RegExp(
+      /^((25[0-5]|(2[0-4]|1\d|[1-9]|)\d)(\.(?!$)|$)){4}$/
+    );
+    const defaultValue = localIPs.find((ip) => v4Regex.test(ip));
     if (!localIP && defaultValue) {
       setLocalIP(defaultValue);
     }
