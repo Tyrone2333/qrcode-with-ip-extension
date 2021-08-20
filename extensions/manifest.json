@@ -1,11 +1,11 @@
 {
   "name": "QRCode With IP",
   "description": "Display QRCode with Your Local IP",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "action": {
     "default_popup": "./dist/index.html"
   },
-  "permissions": ["tabs", "activeTab"],
+  "permissions": ["activeTab"],
   "icons": {
     "16": "16.png",
     "48": "48.png",
