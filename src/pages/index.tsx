@@ -20,7 +20,7 @@ const Home: NextPage = () => {
   };
 
   return (
-    <VStack p={6} spacing={4}>
+    <VStack p={6} spacing={4} minW={'300px'}>
       <Skeleton isLoaded={currentURL !== ""}>
         <QRCode value={currentURL} />
       </Skeleton>
