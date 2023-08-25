@@ -1,7 +1,7 @@
 {
   "name": "QRCode With IP",
   "description": "Display QRCode with Your Local IP",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "action": {
     "default_popup": "./dist/index.html"
   },
