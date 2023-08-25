@@ -3,23 +3,19 @@ import { getLocalIPs } from "../lib/ip";
 
 export const useLocalIP = (): string | null => {
   const [localIP, setLocalIP] = useState<string | null>(null);
-  const [localIPs, setLocalIPs] = useState<string[]>([]);
 
   useEffect(() => {
-    getLocalIPs((ips) => {
-      setLocalIPs(ips);
-    });
+    const getLocalIP = async () => {
+      const localIPS = await getLocalIPs();
+      const localPrivateIps = localIPS.filter((ip) =>
+        /^(10|172\.(1[6-9]|2\d|3[01])|192\.168)\./.test(ip)
+      );
+
+      setLocalIP(localPrivateIps[0] ?? null);
+    };
+
+    getLocalIP();
   }, []);
-
-  useEffect(() => {
-    const v4Regex = new RegExp(
-      /^((25[0-5]|(2[0-4]|1\d|[1-9]|)\d)(\.(?!$)|$)){4}$/
-    );
-    const defaultValue = localIPs.find((ip) => v4Regex.test(ip));
-    if (!localIP && defaultValue) {
-      setLocalIP(defaultValue);
-    }
-  }, [localIP, localIPs]);
 
   return localIP;
 };
