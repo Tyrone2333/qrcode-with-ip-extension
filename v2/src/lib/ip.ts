@@ -1,4 +1,4 @@
-export const getLocalIPs = async (): Promise<string[]> => {
+export const getLocalIPs = async (): Promise<string[] > => {
   const ips: string[] = []
 
   return new Promise((resolve, reject) => {
