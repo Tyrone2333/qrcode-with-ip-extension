@@ -1,4 +1,4 @@
-export const getLocalIPs = async (): Promise<string[] > => {
+export const getLocalIPs = async (): Promise<string[]> => {
   const ips: string[] = []
 
   return new Promise((resolve, reject) => {
@@ -13,7 +13,8 @@ export const getLocalIPs = async (): Promise<string[] > => {
 
         ips.push(ip)
       } else {
-        resolve(ips)
+        const filtered = [...new Set(ips)].sort()
+        resolve(filtered)
         pc.close()
       }
     }
