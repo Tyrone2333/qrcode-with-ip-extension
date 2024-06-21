@@ -1,9 +1,9 @@
 {
   "name": "qrcode-with-ip-extension",
-  "displayName": "QRCode With IP",
+  "displayName": "QRCode With Local IP",
   "version": "2.1.0",
-  "description": "Display QRCode with Your Local IP",
-  "author": "Yuichiro Miyamae <miyamae@yuichir.ooo>",
+  "description": "Display and replace the Local IP",
+  "author": "enzo <a424021424@gmail.com>",
   "scripts": {
     "dev": "plasmo dev",
     "build": "plasmo build",
