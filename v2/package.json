@@ -1,7 +1,7 @@
 {
   "name": "qrcode-with-ip-extension",
   "displayName": "QRCode With IP",
-  "version": "2.0.1",
+  "version": "2.1.0",
   "description": "Display QRCode with Your Local IP",
   "author": "Yuichiro Miyamae <miyamae@yuichir.ooo>",
   "scripts": {
